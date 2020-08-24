@@ -10,6 +10,7 @@ from django.utils import timezone
 # Create your views here.
 class HomeView(ListView):
     model = Item
+    paginate_by = 1
     template_name = 'home.html'
 
 class CheckoutView(View):
